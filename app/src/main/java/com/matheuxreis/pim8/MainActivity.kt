@@ -8,6 +8,8 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationBarView
+import com.matheuxreis.pim8.presentation.views.SignIn
+import com.matheuxreis.pim8.presentation.views.SignUp
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
                 }
                 R.id.auth_page_2 -> {
-                    loadFragment(SignUp2())
+                    loadFragment(SignUp())
                     return@setOnItemSelectedListener true
                 }
                 else -> {
